@@ -1,0 +1,76 @@
+/*
+* @Author: fighter
+* @Date:   2016-09-29 18:16:39
+* @Last Modified by:   fighter
+* @Last Modified time: 2016-09-29 20:47:30
+*/
+
+.lay-box {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.lay-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #d3d3d3;
+    opacity: 0.1;
+    background: transparent \0/;
+}
+
+.lay-main {
+    position: absolute;
+    display: inline-block;
+    font-family: Arial, Helvetica, "微软雅黑", "华文细黑", sans-serif;
+}
+
+.lay-wait {
+    width: 50px;
+    height: 50px;
+    background-image: url("loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+.lay-nowait{
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(116, 119, 126);
+    color: #ccc;
+}
+
+.lay-title {
+    font-size: 1.2em;
+    line-height: 2em;
+    background: #3c474a;
+    border-radius: 5px 5px 0 0;
+}
+
+.lay-content {
+    font-size: 1em;
+    padding: 1em;
+    color: #ff911a;
+}
+.lay-btn{
+    padding: 0.5em 1em;
+
+}
+.lay-btn button{
+    display: inline-block;
+    color: inherit;
+    padding: 0.3em;
+    background: #616060;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.lay-btn button:hover{
+    background: #5a5955;
+}

@@ -1,0 +1,177 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family:Arial,Helvetica,"微软雅黑","华文细黑",sans-serif;
+    font-size: 75%;
+    color: #ccc;
+}
+
+input:focus{
+    outline:none;
+}
+
+.box{
+    display:table;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.user-ad {
+    display: table-cell;
+    vertical-align: top;
+    font-size:0;
+    opacity: 0;
+}
+.user-ad a{
+    display: block;
+    width: 358px;
+    height: 491px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user-form{
+    position: relative;
+    display: table-cell;
+    height:100%;
+    vertical-align:top;
+    background-color: transparent;
+    padding: 110px 55px 0;
+}
+
+.content{
+    padding:55px 20px;
+    border-radius:10px ;
+    background-color: #8c8c8c;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.item {
+    position: relative;
+    font-size: 0.75em;
+    height: 2.5em;
+    line-height: 2.5em;
+    width: 208px;
+    margin-top: 1em;
+}
+.item input {
+    display: inline-block;
+    font-size: inherit;
+    padding-left: 2.5em;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    background: #fff;
+    outline: none;
+    box-sizing: border-box;
+    border: solid 3px #8c8c8c;
+    border-radius: 7.5px;
+}
+
+.item input:focus {
+    border: solid 3px #AAD2F0;
+}
+
+.icon{
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.icon-mobile {
+    background-image: url("./images/mobile.png");
+    -moz-background-image: url("./images/mobile.png");
+    -o-background-image: url("./images/mobile.png");
+    -webkit-background-image: url("./images/mobile.png")
+}
+.icon-verify {
+    background-image: url("./images/verify.png");
+    -moz-background-image: url("./images/verify.png");
+    -o-background-image: url("./images/verify.png");
+    -webkit-background-image: url("./images/verify.png")
+}
+.icon-pwd {
+    background-image: url("./images/pwd.png");
+    -moz-background-image: url("./images/pwd.png");
+    -o-background-image: url("./images/pwd.png");
+    -webkit-background-image: url("./images/pwd.png")
+}
+
+
+input.verify {
+    width: 55%;
+}
+
+.sms-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    font-size: 0.75em;
+    height: 3em;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 3px #8c8c8c;
+    border-radius: 7.5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn {
+    position: relative;
+    font-size: 0.75em;
+    height: 3em;
+    line-height: 3em;
+    width: 208px;
+    margin-top: 2em;
+}
+.sub-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:65%;
+    vertical-align: middle;
+    text-align: center;
+    border:none;
+    border-radius: 3px;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.next-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    color: #fff;
+    float: right;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.next-btn:hover{
+    color:#FEC43A;
+}
+
+
+.off {
+    color: #adabab;
+    background: #ddd;
+}
+
+.on {
+    color: #fff;
+    background: #FEC43A;
+}
