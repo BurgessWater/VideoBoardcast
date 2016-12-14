@@ -1,0 +1,39 @@
+@import "../css/var";
+
+.page {
+  margin-top: 6px;
+  text-align: right;
+
+  button {
+    display: inline-block;
+    padding: 0 0.8em;
+    line-height: 2em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &[disabled] {
+      cursor: not-allowed;
+      background-color: #eee;
+      color: #aaa;
+
+      &:hover {
+        background-color: #eee;
+        color: #aaa;
+        border-color: #ddd;
+      }
+    }
+
+    &:hover {
+      @extend .active;
+    }
+  }
+
+  .active {
+    background-color: $lightBlue;
+    color: #fff;
+    border-color: $lightBlue;
+  }
+}

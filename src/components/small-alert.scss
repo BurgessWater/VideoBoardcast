@@ -1,0 +1,78 @@
+@import '../css/var';
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.title {
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  color: #000;
+  font-size: 1.2em;
+  border-radius: 6px 6px 0 0;
+  background-color: #ccc !important;
+  border-bottom: 1px solid #eee;
+
+  .close {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: url('../images/close_black.png') center no-repeat;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.dialog {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  background-color: $popupBgColor;
+  width: 400px;
+  top: 100px;
+  left: 50%;
+  margin-left: -200px;
+  border-radius: 6px;
+
+  .content {
+    color: #494a54;
+    display: table;
+    width: 100%;
+    height: 100%;
+    line-height: 1.2em;
+    padding: 1em;
+
+    .cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+.buttons {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.small-alert {
+  .content {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 2em;
+    overflow: hidden;
+  }
+}

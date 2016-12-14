@@ -1,0 +1,27 @@
+.ad {
+  position: absolute;
+  visibility: hidden;
+}
+
+.ad-bottom-right {
+  @extend .ad;
+  bottom: 0;
+  right: 0;
+  visibility: visible;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  background: url("../images/close_w.png") no-repeat;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+

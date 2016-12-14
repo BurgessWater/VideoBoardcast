@@ -1,0 +1,30 @@
+@import "../../css/var";
+
+.header {
+  display: table-header-group;
+  background-color: #e5e5ec;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  background-color: #fff;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  height: 3em;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+  padding: 0 0.5em;
+}
+
+.no-data{
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+}
