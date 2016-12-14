@@ -1,0 +1,183 @@
+$dark: 'dark-theme';
+$red: 'red-theme';
+$blue: 'blue-theme';
+$purple: 'purple-theme';
+
+// 文本主颜色
+$mainTextColor: ($dark:#bbc1c7, $purple:#bbc1c7, $red:#606060, $blue:#494951);
+
+// ----------- 主导航
+// 背景
+$mainNavBgColorTheme: ($dark:#202427, $purple:#41386f, $red:#be2304, $blue:#3271cc);
+// 默认链接
+$mainNavLinkColorTheme: ($dark:#bbc1c7, $purple:#ccc, $red:#eee, $blue:#f1f1f1);
+// 默认图片
+$mainNavLinkImageTheme: ($dark:'gray', $purple:'white', $red:'white', $blue:'white');
+// 高亮图片
+$mainNavLinkHighLightImageTheme: ($dark:'blue', $purple:'blue', $red:'yellow', $blue:'yellow');
+// 高亮下划线
+$mainNavLinkLineColorTheme: ($dark:#4f9bff, $purple:#4f9bff, $red:#ffd429, $blue:#ffd429);
+
+// ----------- 分类模块
+// 标题文本
+$catalogTitleTextColorTheme: ($dark:#fff, $purple:#fff, $red:#fff, $blue:#697684);
+// 标题背景
+$catalogTitleBgColorTheme: ($dark:#202427, $purple:#382d6f, $red:#be2304, $blue:#c7def8);
+// 容器背景
+$catalogContainerBgColorTheme: ($dark:#1a1c1e, $purple:#201f2e, $red:#f2f0f1, $blue:#eaf3fc);
+
+// ----------- 子导航
+// 按钮背景
+$subNavBtnBgColorTheme: ($dark:#2c3239, $purple:#332940, $red:#e3e1e2, $blue:#c7def8);
+// 按钮高亮背景
+$subNavBtnHighlightColorTheme: ($dark:#eaa721, $purple:#eaa721, $red:#be2304, $blue:#3980db);
+// 按钮默认图片
+$subNavLinkImageTheme: ($dark:'yellow', $purple:'yellow', $red:'gray', $blue:'blue');
+
+// ----- 用户在线icon片
+$userOnlineImageTheme: ($dark:'blue', $purple:'blue', $red:'yellow', $blue:'blue');
+
+.user-online-bg {
+  @each $theme, $img in $userOnlineImageTheme {
+    .#{$theme} & {
+      background: url("../images/online-user_#{$img}.png") 6px center no-repeat;
+    }
+  }
+}
+
+@each $theme, $img in $subNavLinkImageTheme {
+  .#{$theme} {
+    @each $i in cjrl, ckap, tzbd, zjhg, jscl {
+      .#{$i} .sub-nav-icon {
+        background-image: url('../images/#{$i}_#{$img}.png');
+      }
+    }
+  }
+}
+
+@each $i in cjrl, ckap, tzbd, zjhg, jscl {
+  .#{$i}:hover .sub-nav-icon {
+    background-image: url('../images/#{$i}_white.png');
+  }
+}
+
+$prefix: nav;
+
+@each $theme, $img in $mainNavLinkImageTheme {
+  .#{$theme} {
+    @each $i in room, down, open, save, collect, skin {
+      .#{$prefix}-#{$i} {
+        background: url('../images/#{$i}_#{$img}.png') left center no-repeat;
+      }
+    }
+  }
+}
+
+@each $theme, $color in $mainNavLinkLineColorTheme {
+  .#{$theme} {
+    @each $i in room, down, open, save, collect, skin {
+      .#{$prefix}-#{$i} {
+        &:hover, &.active {
+          border-bottom: 2px solid $color;
+        }
+      }
+    }
+  }
+}
+
+@each $theme, $img in $mainNavLinkHighLightImageTheme {
+  .#{$theme} {
+    @each $i in room, down, open, save, collect, skin {
+      .#{$prefix}-#{$i} {
+        &:hover, &.active {
+          background-image: url('../images/#{$i}_#{$img}.png');
+        }
+      }
+    }
+  }
+}
+
+.main-nav-bg-color {
+  @each $theme, $color in $mainNavBgColorTheme {
+    .#{$theme} & {
+      background-color: $color;
+    }
+  }
+}
+
+.main-nav-link-color {
+  @each $theme, $color in $mainNavLinkColorTheme {
+    .#{$theme} & {
+      a {
+        color: $color;
+      }
+    }
+  }
+}
+
+.title-bg-color {
+  @each $theme, $color in $catalogTitleBgColorTheme {
+    .#{$theme} & {
+      background-color: $color;
+    }
+  }
+}
+
+.title-text-color {
+  @each $theme, $color in $catalogTitleTextColorTheme {
+    .#{$theme} & {
+      color: $color;
+    }
+  }
+}
+
+.container-bg-color {
+  @each $theme, $color in $catalogContainerBgColorTheme {
+    .#{$theme} & {
+      background-color: $color;
+    }
+  }
+}
+
+.sub-nav-border {
+  @each $theme, $color in $catalogContainerBgColorTheme {
+    .#{$theme} & li {
+      border: 1px solid $color;
+    }
+  }
+}
+
+.sub-nav-btn-color {
+  @each $theme, $color in $subNavBtnHighlightColorTheme {
+    .#{$theme} & {
+      a:hover {
+        background-color: $color;
+      }
+    }
+  }
+}
+
+.sub-nav-btn-color {
+  @each $theme, $color in $subNavBtnBgColorTheme {
+    .#{$theme} & {
+      li {
+        background-color: $color;
+      }
+    }
+  }
+}
+
+.text-color {
+  @each $theme, $color in $mainTextColor {
+    .#{$theme} & {
+      a {
+        color: $color;
+      }
+      color: $color;
+    }
+  }
+}
+
+.#{$blue} .main-nav-info-text-color {
+  color: #eee;
+}

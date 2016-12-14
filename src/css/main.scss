@@ -1,0 +1,116 @@
+@import "var";
+@import "normalize";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: $bodyColor;
+  font-size: 12px;
+  font-family: '微软雅黑', Arial, sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol, h3, table, td, th, tr {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: ($i/12)*100%;
+  }
+}
+
+.button-group {
+  .button {
+    margin-right: 1em;
+  }
+}
+
+.button {
+  padding: 0.5em 1em;
+  min-width: 6em;
+  border-radius: 2px;
+
+  &.primary {
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+    &[disabled] {
+      background-color: #eee;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &.blue {
+      background-color: $lightBlue;
+      border-color: $lightBlue;
+      color: #fff;
+
+      &:hover {
+        background-color: #0f68de;
+      }
+    }
+  }
+
+  &.small {
+    padding: 0.1em 0.3em;
+  }
+
+}
+
+input[type='text'] {
+  &:focus {
+    border-color: $lightBlue;
+  }
+}
+
+@import "xf";
+@import "theme";
