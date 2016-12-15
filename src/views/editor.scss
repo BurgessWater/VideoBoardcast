@@ -1,0 +1,47 @@
+.editor {
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  label {
+    vertical-align: top;
+    width: 5em;
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+.input-control {
+  border: 1px solid #d7d9e0;
+  padding: 0 0.5em;
+}
+
+:global .time-control {
+  input {
+    border: 1px solid #d7d9e0;
+    padding: 0 0.5em;
+  }
+  display: inline-block;
+}
+
+:global .date-control {
+  height: 100%;
+  width: 100%;
+  input {
+    border: 1px solid #eee;
+    padding: 0 0.5em;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.button-bar {
+  text-align: center;
+}
+
+.red {
+  color: red;
+  font-style: normal;
+  padding-left: 0.5em;
+}

@@ -1,0 +1,82 @@
+@import "../css/var";
+/* main-nav.scss */
+
+
+
+.main-nav {
+  line-height: $mainNavHeight;
+  height: $mainNavHeight;
+  //color: $titleTextColor;
+}
+
+.nav {
+  width: 45%;
+  padding-top: 2px;
+  line-height: 48px;
+
+  li {
+    margin: 0 0.6em;
+    display: inline-block;
+  }
+
+  a {
+    &:hover, &.active {
+      color: #fff;
+    }
+    display: block;
+    padding-left: 30px;
+  }
+}
+
+.log {
+  width: 15%;
+  overflow: hidden;
+  padding-left: 5px;
+
+  img {
+    max-height: $mainNavHeight;
+    vertical-align: middle;
+  }
+}
+
+.info {
+  width: 40%;
+  text-align: right;
+}
+
+.tel {
+  text-align: right;
+  padding-right: 0.5em;
+  em {
+    color: #fdbe41;
+    font-size: 1.5em;
+  }
+}
+
+.log, .nav, .info, .tel, .user {
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+}
+
+.user {
+  padding-right: 10px;
+  li {
+    display: inline-block;
+  }
+  a {
+    padding: 0 1em;
+    display: inline-block;
+  }
+}
+
+.hello {
+  a {
+    padding-left: 0.5em;
+    text-decoration: underline;
+  }
+}
+
+.skin {
+  position: relative;
+}

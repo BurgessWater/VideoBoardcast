@@ -1,0 +1,67 @@
+@import "../css/var";
+
+.online {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  top: $titleHeight + $layoutSpace;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  ol {
+    padding: 1em 2em 0;
+    font-size: 0.8em;
+    display: table;
+    width: 100%;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  li {
+    cursor: pointer;
+    display: table-row;
+    vertical-align: middle;
+    height: 2.5em;
+  }
+
+  span {
+    display: table-cell;
+  }
+
+  .icon {
+    width: 20%;
+  }
+
+  .name {
+    width: 55%;
+  }
+
+  .lv {
+    width: 25%;
+  }
+}
+
+.title {
+  margin-top: $layoutSpace;
+  height: $titleHeight;
+  line-height: $titleHeight;
+  font-size: 1em;
+
+
+  padding-left: 2em;
+
+  .count {
+    margin-left: 0.5em;
+  }
+}

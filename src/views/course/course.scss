@@ -1,0 +1,90 @@
+@import "../../css/var";
+
+.active {
+  background-color: $lightBlue;
+  color: #fff;
+}
+
+.no-course {
+  margin: 2em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.curse {
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .day-selector {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    line-height: 3em;
+    background-color: #e5e5ec;
+
+    li {
+      display: inline-block;
+      width: 1/7*100%;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        @extend .active
+      }
+    }
+  }
+
+}
+
+.entry {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid $popupBgColor;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #fff;
+  width: 25%;
+  height: 100px;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+
+  &.selected {
+    border: 1px solid $lightBlue;
+  }
+
+  .courseInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $lightBlue;
+    color: #fff;
+    opacity: 0.95;
+    left: 0;
+    top: 0;
+    transition: transform 0.5s;
+    transform: translate3d(0, 200px, 0);
+
+    .table {
+      display: table;
+      width: 100%;
+      height: 100%;
+      border-spacing: 10px;
+    }
+    .cell {
+      display: table-cell;
+      padding: 1em;
+      vertical-align: middle;
+    }
+  }
+
+  &:hover {
+    //@extend .active;
+
+    .courseInfo {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+

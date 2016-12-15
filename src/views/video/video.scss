@@ -1,0 +1,31 @@
+@import "../../css/var";
+
+.video {
+  position: absolute;
+  height: 60%;
+  left: 0;
+  right: $layoutSpace;
+  top: 0;
+}
+
+.vod-link {
+  color: $linkHightColor;
+  position: absolute;
+  top:0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.title {
+  height: $titleHeight;
+  line-height: $titleHeight;
+  padding-left: 0.5em;
+}
+
+.player {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $titleHeight;
+  bottom: 0;
+}

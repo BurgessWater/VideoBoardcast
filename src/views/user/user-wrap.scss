@@ -1,0 +1,22 @@
+@import "../../css/var";
+//@import "../common";
+
+.overlay{
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.user-box {
+  position: absolute;
+  width: 750px;
+  height: 330px;
+  top: 50%;
+  left: 50%;
+  margin-left: -(750px/2);
+  margin-top: -(330px/2);
+}

@@ -1,0 +1,46 @@
+@import "../css/var";
+
+
+.freez-y-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.freez-x-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.main-body {
+  position: absolute;
+  top: $mainNavHeight + $layoutSpace;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .nav-container {
+    @extend .freez-y-box;
+    width: 300px;
+    //padding-right: $layoutSpace;
+    //background-color: $containerBgColor;
+  }
+
+  .content-container {
+    @extend .freez-y-box;
+    left: 300px + $layoutSpace;
+    right: 0;
+
+    .video-box {
+      @extend .freez-y-box;
+      width: 50%;
+    }
+
+    .chat-box {
+      @extend .freez-y-box;
+      right: 0;
+      width: 50%;
+    }
+  }
+}

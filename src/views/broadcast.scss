@@ -1,0 +1,31 @@
+.broadcast {
+  height: 71px;
+  background: red;
+  position: absolute;
+  z-index: 99999;
+}
+
+.header, .content, .tail {
+  display: inline-block;
+}
+
+.header {
+  width: 150px;
+  height: 100%;
+  background: url("../images/fly1.png") no-repeat;
+}
+
+.content {
+  height: 100%;
+  background: url("../images/fly2.png") repeat-x;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 71px;
+  padding: 0 0.5em;
+}
+
+.tail {
+  width: 16px;
+  height: 100%;
+  background: url("../images/fly3.png") no-repeat;
+}
