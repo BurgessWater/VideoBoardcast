@@ -1,0 +1,16 @@
+
+.face-icon {
+  width: 440px;
+  background: #fff;
+  padding: 5px;
+  border: 1px #dfe6f6 solid;
+}
+
+.face-icon li {
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.face-icon .current img {
+  box-shadow: 0 0 8px 3px #0CC;
+}

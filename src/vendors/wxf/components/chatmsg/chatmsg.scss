@@ -1,0 +1,87 @@
+
+.msgContent {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #eee;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #333;
+  background-color: #f9faff;
+  position: relative;
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: left;
+  max-width: 100%;
+  margin-top: 5px;
+  img {
+    max-width: 100%;
+  }
+  > div {
+    float: left;
+  }
+  > span {
+    color: #4f94f3;
+    float: left;
+    padding-right: 5px;
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+}
+
+.msgContent::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.selfMsg {
+  > div:last-child {
+    padding-left: 0px;
+  }
+  .msgContent {
+    &::after {
+      right: -4px;
+      background: #f9faff;
+      border-top: 1px solid #eee;
+      border-right: 1px solid #eee;
+    }
+
+  }
+}
+
+.otherMsg {
+  .msgContent::after {
+    background: #f9faff;
+    left: -4px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  > div:first-child {
+    padding-right: 0;
+  }
+}
+
+.msgs {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.audit {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 25px;
+  text-align: center;
+  > span {
+    cursor: pointer;
+    color: coral;
+  }
+}

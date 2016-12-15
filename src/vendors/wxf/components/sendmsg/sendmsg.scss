@@ -1,0 +1,104 @@
+@import "../../../../css/var";
+
+@each $i in font, face, image, cheer, clear, arrow {
+  .#{$i} {
+    background: url('../../assets/icon/#{$i}.png') no-repeat;
+    >span{
+      cursor: pointer;
+      width: 3.5em;
+      line-height: 2em;
+      display: inline-block;
+      text-align: right;
+    }
+    &:hover {
+      background: url('../../assets/icon/#{$i}_blue.png') no-repeat;
+    }
+  }
+}
+
+.sendmsg {
+  //height: 100%;
+  position: relative;
+}
+.input-mask{
+  position:absolute;
+  background-color: #f1f1f1;
+  background-color: rgba(243,243,243,.95);
+  transition: all .2s ease-in;
+  height: $msgInputHeight;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  text-align: center;
+  line-height: $msgInputHeight;
+  color: #e52e2e;
+}
+.send-message {
+  background: $linkHightColor;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 7px;
+}
+
+.msgInput {
+  height: $msgInputHeight;
+  border: solid 1px #999;
+  width: 100%;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.msg-setting {
+  min-height: 2em !important;
+
+  .send-target {
+    height: 1.7em;
+
+  }
+  .select-box {
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #e3e5f2;
+    height: 2.3em;
+
+  }
+}
+
+.robot-list {
+
+  margin-top: 11px;
+
+  .robot-box {
+    height: 2em;
+    //width: 165px;
+    font-size:12px;
+  }
+}
+
+.msg-list {
+  line-height: 1.5em;
+  margin-top: 5px;
+
+  img {
+    position: relative;
+    bottom: -3px;
+    margin-right: .2em;
+    width: 1.6em;
+  }
+}
+
+.qq-counsellor {
+  margin-bottom: 4px;
+  background-color: $chat-title-highlight;
+  min-height: 3em;
+  line-height: 2em;
+  a {
+    color: #000;
+  }
+  ul {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 28px;
+  }
+}

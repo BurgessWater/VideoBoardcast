@@ -1,0 +1,21 @@
+.fontset {
+  padding: 0 10px;
+  ul {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  select {
+    padding: 4px;
+  }
+}
+
+.fontWeight {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.fontItalic {
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.cheer {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li {
+
+      cursor: pointer;
+      padding: 5px 10px;
+      text-align: center;
+
+      &.current {
+        background-color: #999;
+      }
+    }
+  }
+}
