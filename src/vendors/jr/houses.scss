@@ -1,0 +1,156 @@
+
+.houses {
+  overflow-x: hidden;
+  background-color: #ebecf1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  .houwidth {
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  .cursor {
+    cursor: pointer;
+    background-color: #ffd75c;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  .cursor:hover {
+    color: #fff;
+  }
+  .header {
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    padding-right: 20px;
+  }
+  .header ul {
+    margin: 0 auto;
+  }
+  .header li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .welcome {
+    font-size: 2em;
+    padding: 30px 0;
+  }
+  .welcome .playName {
+    color: #ffd016;
+  }
+  .content {
+    background-color: #ebecf1;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .houseList {
+    margin: 30px auto;
+    //min-width: 1120px;
+  }
+  .houseList li {
+    display: inline-block;
+    width: 326px;
+    margin: 0 10px;
+    color: #fff;
+    vertical-align: top;
+  }
+  .houseList .listM{
+    height: 670px;
+    width: 326px;
+    position: absolute;
+    z-index: 999;
+  }
+  .houseList .listM:hover{
+    background: rgba(250,250,250,.2);
+  }
+  .houseOne-0 {
+    background: url("./images/houses1.jpg") no-repeat;
+  }
+  .houseOne-1 {
+    background: url("./images/houses2.jpg") no-repeat;
+  }
+  .houseOne-2 {
+    background: url("./images/houses3.jpg") no-repeat;
+  }
+  .setBcolor-0 {
+    background-color: #f06b40;
+  }
+  .setBcolor-1 {
+    background-color: #20bdf2;
+  }
+  .setBcolor-2 {
+    background-color: #f0be1a;
+  }
+  .logoimg-0 {
+    background: url("./images/Hlogin1.png") no-repeat;
+    width: 52px;
+  }
+  .logoimg-1 {
+    background: url("./images/Hlogin2.png") no-repeat;
+    width: 34px;
+  }
+  .logoimg-2 {
+    background: url("./images/Hlogin3.png") no-repeat;
+    width: 39px;
+  }
+  .listMouse{
+    background-color: rgba(250,250,250,.6);
+  }
+  .logo {
+    margin: 100px auto 50px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+  }
+  .logo b {
+    display: block;
+    margin: 0px auto;
+    background-position: 0px 25px;
+    height: 69px;
+  }
+  .playName {
+    margin-top: 10px;
+    font-size: 1.3em;
+  }
+  .playBox {
+    height: 313px;
+  }
+  .play {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 1px;
+    position: absolute;
+    z-index: 999;
+    margin: 100px;
+  }
+  .play:hover {
+    color: #000;
+    cursor: pointer;
+  }
+  .houseBottom {
+    background-color: #464749;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    height: 40px;
+  }
+  .clear {
+    clear: both;
+    display: none;
+  }
+  .conBottom {
+    font-size: 0.85em;
+    padding-bottom: 20px;
+  }
+}

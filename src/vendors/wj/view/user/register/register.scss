@@ -1,0 +1,30 @@
+@import "../_common";
+
+input.verify {
+  width: 60%;
+}
+
+.verifyBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  font-size: 0.75em;
+  height: 3em;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  border: solid $borderWidth $bgColor;
+  border-radius: $borderWidth * 2.5;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  background: $hoverColor;
+
+  &[disabled]{
+    color: $btnColor;
+    background: $btnBgColor;
+  }
+}
+
+

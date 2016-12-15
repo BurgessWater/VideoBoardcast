@@ -1,0 +1,42 @@
+@import "../_common";
+
+/*登录页面特殊样式*/
+
+.links {
+  position: absolute;
+  top: 0;
+  right: -4.8em;
+  width: 4.5em;
+  height: 3em;
+  line-height: 2.9em;
+  font-size: 1em;
+  color: $wordColor;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $hoverColor;
+  }
+}
+
+.checkBox {
+  color: $wordColor;
+  user-select: none;
+  cursor: pointer;
+
+  i {
+    display: inline-block;
+    width: 2em;
+    height: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 0.2em 0;
+    vertical-align: middle;
+  }
+  .Rmb {
+    background-image: url("../images/select.jpg");
+  }
+  .noRmb {
+    background-image: url("../images/noselect.jpg");
+  }
+}
+

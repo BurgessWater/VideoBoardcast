@@ -1,0 +1,90 @@
+@import "varUser";
+
+/*主体布局*/
+
+// 手机端页面
+.main-mobile{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+// 非手机端页面（有广告）
+.main-ad{
+  position: relative;
+  padding-left: 358px;
+  height: 330px;
+
+  .userAd {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  img {
+    width: 358px;
+    height: 330px;
+  }
+}
+
+.main {
+  min-width: 368px;
+  background: $bgColor;
+  color: #fff;
+  font-size: $fontSize;
+
+  .userForm {
+    height: 100%;
+    padding: 15px;
+  }
+
+  a {
+     text-decoration: none;
+   }
+}
+
+
+/*userForm 表单部分*/
+//头部
+.header {
+  width: 100%;
+  font-size: 0.75em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: $wordColor;
+
+  .logo {
+    vertical-align: top;
+    margin-right: 0.35em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .close-btn {
+    display: inline-block;
+    float: right;
+    width: 1.5em;
+    height: 1.5em;
+    background: $bgColor url("./images/exit.png") no-repeat center;
+    transition: background-color 500ms;
+    cursor: pointer;
+    border: 0;
+
+    &:hover{
+      background-color: $exitBtnColor;
+    }
+  }
+
+}
+
+//表单主体
+.content {
+  padding: 0 20% 1.25em;
+  font-size: 1em;
+}
+
+
+

@@ -1,0 +1,87 @@
+@import "varUser";
+
+/*登录系统公共样式表*/
+
+.title {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: $hoverColor;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.item {
+  position: relative;
+  font-size: 0.75em;
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 100%;
+  margin-top: 1em;
+
+  input {
+    display: inline-block;
+    font-size: inherit;
+    padding-left: 2.5em;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    background: #fff;
+    outline: none;
+    box-sizing: border-box;
+    border: solid $borderWidth $bgColor;
+    border-radius: $borderWidth * 2.5;
+  }
+
+  input:focus {
+    border: solid $borderWidth $borderColor;
+  }
+}
+
+@each $type in name, pwd, mobile, verify {
+  .icon-#{$type} {
+    display: inline-block;
+    position: absolute;
+    left: $borderWidth;
+    top: $borderWidth;
+    width: 30px;
+    height: 30px;
+    background: url("../images/#{$type}.png") no-repeat center;
+    cursor: pointer;
+  }
+}
+
+.btn {
+  font-size: 1.25em;
+  height: 2em;
+  line-height: 2em;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.8em;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  border: solid $bgColor;
+  border-width: 0 $borderWidth;
+  border-radius: $borderWidth * 2.5;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  background: $hoverColor;
+
+  &[disabled]{
+    color: $btnColor;
+    background: $btnBgColor;
+  }
+
+}
+
+.off {
+  color: $btnColor;
+  background: $btnBgColor;
+}
+
+.on {
+  color: #fff;
+  background: $hoverColor;
+}
+
